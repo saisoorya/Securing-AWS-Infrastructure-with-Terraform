@@ -1,0 +1,37 @@
+{    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "s3:GetObject",
+                "s3:PutObject",
+                "s3:PutObjectAcl",
+                "s3:ListAllMyBuckets",
+                "s3:ListBucket",
+                "s3:GetBucketLocation"
+            ],
+
+            "Resource": [
+
+              "arn:aws:s3:::cy7900-s3-prod-usw2",
+
+              "arn:aws:s3:::cy7900-s3-prod-usw2/*"
+
+            ]
+
+        },
+
+         {
+            "Sid": "ListBuckets",
+            "Effect": "Allow",
+            "Action":[
+
+                "s3:ListAllMyBuckets",
+                "s3:ListBucket"
+            ],
+
+            "Resource":"*"
+        }
+
+    ]
+}

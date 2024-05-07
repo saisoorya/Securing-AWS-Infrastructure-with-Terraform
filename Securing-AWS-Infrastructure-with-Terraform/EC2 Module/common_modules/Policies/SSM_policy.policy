@@ -1,0 +1,25 @@
+{    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "ssm:DescribeAssociation",
+                "ssm:GetDocument",
+                "ssm:ListAssociations",
+                "ssm:GetCommandInvocation",
+                "ssm:GetDocument",
+                "ssm:DescribeDocument",
+                "ssm:ListDocuments",
+                "ssm:CreateAssociation",
+                "ssm:UpdateAssociation",
+                "ssm:DeleteAssociation",
+                "ssm:DescribeAssociation",
+                "ssm:GetParameter"
+
+            ],
+
+            "Resource": "arn:aws:ssm:*:*:parameter/cy7900-ecs/image/version"
+        }
+
+    ]
+}

@@ -1,0 +1,41 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+       
+       
+        {
+            "Effect": "Allow",
+            "Action": "ecs:*",
+            "Resource": [
+                "arn:aws:ecs:us-west-2:*:cluster/cy7900-cluster/*",
+                "arn:aws:ecs:us-west-2:*:launch-template/lt-013d21a87386f5857/*",
+                "arn:aws:ecs:us-west-2:*:service/cy7900-cluster/*",
+                "arn:aws:ecs:us-west-2:*:task-definition/cy7900:*"
+            ]
+        },
+
+        {
+            "Sid": "ListClusters",
+            "Effect": "Allow",
+            "Action":[
+                "ecs:ListClusters",
+                "ecs:DescribeClusters",
+                "ecs:ListTaskDefinitionFamilies",
+                "autoscaling:*",
+                "ecs:*"
+
+
+            ],
+            "Resource": "*"
+            
+        }
+
+        
+
+       
+       
+  
+
+    ]
+
+}

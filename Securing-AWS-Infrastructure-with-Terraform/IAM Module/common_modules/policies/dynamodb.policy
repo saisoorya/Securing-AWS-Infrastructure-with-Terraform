@@ -1,0 +1,16 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "dynamodb:DescribeTable",
+                "dynamodb:Query",
+                "dynamodb:Scan",
+                "dynamodb:PutItem",
+                "dynamodb:*"
+            ],
+            "Resource": "arn:aws:dynamodb:*:*:table/terraform-state-lock-dev"
+        }
+    ]
+}

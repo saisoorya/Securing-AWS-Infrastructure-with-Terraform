@@ -1,2 +1,2 @@
 # Securing-AWS-Infrastructure-with-Terraform
-# Imprtant Information
+Imprtant Information
